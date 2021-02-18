@@ -26,6 +26,10 @@ ro.vendor.qti.va_aosp.support=1
 vendor.iop.enable_prefetch_ofr=1
 vendor.iop.enable_uxe=0
 
+# LMKD
+ro.config.low_ram=false
+ro.lmk.log_stats=true
+
 # Media
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 

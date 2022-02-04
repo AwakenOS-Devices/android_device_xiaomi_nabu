@@ -193,9 +193,6 @@ dalvik.vm.heapsize=512m
 dalvik.vm.heapstartsize=8m
 dalvik.vm.heaptargetutilization=0.75
 
-# Dex2oat
-dalvik.vm.dex2oat64.enabled=true
-
 # Display
 debug.sf.layer_caching_active_layer_timeout_ms=1000
 ro.surface_flinger.protected_contents=true
@@ -234,8 +231,16 @@ ro.surface_flinger.set_touch_timer_ms=750
 ro.surface_flinger.wcg_composition_dataspace=143261696
 
 # Dexopt
+dalvik.vm.dex2oat64.enabled=true
 pm.dexopt.first-boot=quicken
 pm.dexopt.bg-dexopt=everything
+pm.dexopt.boot=verify
+pm.dexopt.install=speed-profile
+dalvik.vm.image-dex2oat-filter=speed
+dalvik.vm.image-dex2oat-threads=8
+dalvik.vm.dex2oat-filter=speed
+dalvik.vm.dex2oat-threads=8
+dalvik.vm.dex2oat64.enabled=true
 
 # DPM
 persist.vendor.dpm.loglevel=0

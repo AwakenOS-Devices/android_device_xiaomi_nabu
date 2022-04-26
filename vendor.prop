@@ -274,6 +274,7 @@ ro.hardware.vulkan=adreno
 ro.hwui.render_ahead=2
 ro.opengles.version=196610
 debug.sf.enable_egl_image_tracker=1
+vendor.display.use_smooth_motion=1
 vendor.gralloc.disable_ubwc=0
 vendor.display.idle_time=0
 vendor.display.idle_time_inactive=0

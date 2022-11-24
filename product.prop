@@ -1,3 +1,6 @@
+# IncrementalFS
+ro.incremental.enable=yes
+
 # radio
 ro.radio.noril=true
 

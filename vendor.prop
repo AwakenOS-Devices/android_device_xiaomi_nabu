@@ -289,6 +289,7 @@ vendor.display.use_smooth_motion=1
 vendor.gralloc.disable_ubwc=0
 vendor.display.idle_time=0
 vendor.display.idle_time_inactive=0
+debug.sf.predict_hwc_composition_strategy=0
 
 # Media
 debug.stagefright.ccodec=1

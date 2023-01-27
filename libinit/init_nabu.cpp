@@ -59,7 +59,6 @@ void set_device_properties(const dv &variant)
 
   for (auto &props : props_order)
   {
-    set_ro_build_prop(props, "fingerprint", variant.build_fingerprint, false);
     set_ro_build_prop(props, "model", variant.model);
     set_ro_build_prop(props, "name", variant.device_name);
     // common for all variants is the market name.
@@ -83,15 +82,6 @@ static const char *build_keys_props[] =
 
 void witch_nabu()
 {
-
-  dv variants[2] = {
-      {"21051182G", "nabu_global", "Xiaomi/nabu_global/nabu:12/RKQ1.200826.002/V13.1.4.0.SKXMIXM:user/release-keys",
-       "nabu_global-user 12 SKQ1.220303.001 V13.1.4.0.SKXMIXM release-keys"},
-      {"21051182C", "nabu", "Xiaomi/nabu/nabu:13/RKQ1.200826.002/V14.0.4.0.TKXCNXM:user/release-keys",
-       "nabu-user 13 TKQ1.221013.002 V14.0.4.0.TKXCNXM release-keys"},
-  };
-
-  set_device_properties(((::android::base::GetProperty("ro.boot.hwc", std::string("GLOBAL")) == "GLOBAL")) ? variants[0] : variants[1]);
 
   property_override("ro.boot.hardware.revision", ::android::base::GetProperty("ro.boot.hwversion", "").c_str());
 }

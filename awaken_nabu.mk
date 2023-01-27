@@ -33,5 +33,3 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="nabu_global-user 12 SKQ1.220303.001 V13.1.4.0.SKXMIXM release-keys"
-
-BUILD_FINGERPRINT := Xiaomi/nabu_global/nabu:12/RKQ1.200826.002/V13.1.4.0.SKXMIXM:user/release-keys

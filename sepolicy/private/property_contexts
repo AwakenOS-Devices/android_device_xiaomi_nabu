@@ -9,3 +9,35 @@ ro.product.mod_device    u:object_r:build_prop:s0
 # MIUI
 ro.cust.test            u:object_r:exported_system_prop:s0
 ro.miui.                u:object_r:exported_system_prop:s0
+
+# Audio
+audio.soundtrigger.debug.urser_id               u:object_r:exported_vendor_audio_prop:s0
+audio_hal.in_period_size                        u:object_r:exported_vendor_audio_prop:s0
+
+# Camera
+camera.                                         u:object_r:exported_vendor_camera_prop:s0
+ro.camera.res.fmq.size                          u:object_r:exported_vendor_camera_prop:s0
+ro.camera.req.fmq.size                          u:object_r:exported_vendor_camera_prop:s0
+
+# FP
+gf.debug.                                       u:object_r:exported_vendor_fingerprint_prop:s0
+persist.sys.fp.                                 u:object_r:exported_vendor_fingerprint_prop:s0
+
+# IMEI
+persist.radio.imei                              u:object_r:exported_vendor_deviceid_prop:s0
+persist.radio.meid                              u:object_r:exported_vendor_deviceid_prop:s0
+ro.ril.miui.imei                                u:object_r:exported_vendor_deviceid_prop:s0
+ro.ril.oem.imei                                 u:object_r:exported_vendor_deviceid_prop:s0
+ro.ril.oem.meid                                 u:object_r:exported_vendor_deviceid_prop:s0
+
+# Sensor
+persist.sensor.                                 u:object_r:exported_vendor_sensors_prop:s0
+invn.hal.data.                                  u:object_r:exported_vendor_sensors_prop:s0
+invn.hal.entry.                                 u:object_r:exported_vendor_sensors_prop:s0
+invn.hal.debug.                                 u:object_r:exported_vendor_sensors_prop:s0
+invn.hal.verbose.                               u:object_r:exported_vendor_sensors_prop:s0
+
+# Thermal
+sys.thermal.                                    u:object_r:exported_vendor_thermal_normal_prop:s0
+vendor.sys.thermal.                             u:object_r:exported_vendor_thermal_normal_prop:s0
+persist.sys.thermal.config                      u:object_r:exported_vendor_thermal_normal_prop:s0

@@ -1,0 +1,11 @@
+system_public_prop(exported_vendor_audio_prop);
+
+system_public_prop(exported_vendor_camera_prop);
+
+system_public_prop(exported_vendor_fingerprint_prop);
+
+system_public_prop(exported_vendor_deviceid_prop);
+
+system_public_prop(exported_vendor_sensors_prop);
+
+system_public_prop(exported_vendor_thermal_normal_prop);

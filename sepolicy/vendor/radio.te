@@ -1,2 +1,3 @@
 get_prop(radio, vendor_audio_prop)
 allow radio zygote:unix_stream_socket { getopt };
+get_prop(radio, exported_vendor_audio_prop)

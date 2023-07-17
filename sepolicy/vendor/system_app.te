@@ -2,6 +2,9 @@ allow system_app vendor_sysfs_battery_supply:dir r_dir_perms;
 
 allow system_app vendor_sysfs_battery_supply:file rw_file_perms;
 
+allow system_app sysfs_msm_subsys:dir { search };
+allow system_app sysfs_msm_subsys:file { read open getattr };
+
 r_dir_file(system_app, vendor_sysfs_battery_supply)
 # Zygote
 allow system_app zygote:unix_stream_socket { getopt };
@@ -14,3 +17,4 @@ allow system_app sysfs_zram:dir search;
 allow system_app sysfs_zram:file r_file_perms;
 
 allow system_app sysfs_thermal:file rw_file_perms;
+r_dir_file(system_app, sysfs_msm_subsys)

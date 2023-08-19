@@ -2,3 +2,10 @@
 get_prop(platform_app, vendor_camera_prop)
 allow platform_app zygote:unix_stream_socket { getopt };
 
+allow platform_app vendor_sysfs_battery_supply:dir { search };
+allow platform_app vendor_sysfs_battery_supply:file { read open getattr };
+allow platform_app sysfs_msm_subsys:dir { search };
+allow platform_app sysfs_msm_subsys:file { read open getattr };
+
+r_dir_file(platform_app, vendor_sysfs_battery_supply)
+r_dir_file(platform_app, sysfs_msm_subsys)

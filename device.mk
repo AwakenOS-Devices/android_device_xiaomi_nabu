@@ -411,6 +411,10 @@ PRODUCT_PACKAGES += \
     init.xiaomi.rc \
     ueventd.qcom.rc
 
+# Recovery
+Recovery_Path := $(LOCAL_PATH)/prebuilt/recovery
+TARGET_PREBUILT_RECOVERY_RAMDISK := $(Recovery_Path)/recovery-ramdisk.zip
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl-xiaomi \

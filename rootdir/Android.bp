@@ -98,7 +98,7 @@ prebuilt_etc {
 
 prebuilt_etc {
     name: "init.nabu.perf.rc",
-    filename: "init.nabu.perf.rc",
     src: "etc/init.nabu.perf.rc",
+    sub_dir: "init",
     vendor: true,
 }

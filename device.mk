@@ -409,6 +409,7 @@ PRODUCT_PACKAGES += \
     init.qti.dcvs.sh
 
 PRODUCT_PACKAGES += \
+    init.nabu.perf.rc \
     init.qcom.power.rc \
     init.qcom.rc \
     init.qcom.usb.rc \

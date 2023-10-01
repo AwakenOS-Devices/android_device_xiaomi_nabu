@@ -319,16 +319,14 @@ debug.stagefright.omx_default_rank=0
 # OTG
 persist.sys.oem.otg_support=true
 
-# PASR
-vendor.power.pasr.enabled=false
-
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.perf-hal.ver=2.2
 ro.vendor.perf.scroll_opt=true
 ro.vendor.perf.scroll_opt.heavy_app=2
-vendor.power.pasr.enabled=false
 vendor.pasr.activemode.enabled=false
+ro.vendor.qspm.enable=true
+vendor.power.pasr.enabled=true
 
 # Radio
 persist.data.df.iwlan_mux=9

@@ -134,9 +134,6 @@
         </stream>
         <stream type="notification">
         </stream>
-        <stream type="notification">
-            <apply effect="notification_helper"/>
-        </stream>
     </postprocess>
     <preprocess>
         <stream type="voice_communication">
